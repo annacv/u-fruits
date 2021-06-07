@@ -70,7 +70,7 @@ export default {
       {
         ariaLabel: 'Link to github repository page',
         cols: '10',
-        href: '',
+        href: 'https://github.com/annacv/u-fruits',
         icon: {
           iconName: 'mdi-github',
           size: 'large'
