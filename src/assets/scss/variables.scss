@@ -1,0 +1,16 @@
+$primaryBase: #9576af;
+$primaryDarken1: #5e02b0;
+$primaryDarken2: #38006A;
+$secondaryBase: #2A2A2A;
+$secondaryLighten1: #3E3E3E;
+$secondaryLighten2: #E8E8E8;
+$secondaryLighten3: #F8F8F8;
+$whiteBaseColor: #FFFFFF;
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $secondaryBase;
+}
