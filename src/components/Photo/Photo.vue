@@ -10,18 +10,19 @@
     :min-width="minWidth"
     :position="position"
     :size="size"
-    :src="getSrc"
+    :src="!src ? getPlaceholder: getSrc"
     :transition="transition"
     :width="width"
   >
     <slot
+      v-if="!src"
       slot="placeholder"
       name="placeholder"
     >
       <v-img
         :alt="alt"
         contain
-        :src="!src ? getPlaceholder : src"
+        :src="getPlaceholder"
       />
     </slot>
   </v-img>

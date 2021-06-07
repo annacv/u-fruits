@@ -151,7 +151,7 @@ export default {
     },
     size: {
       type: String,
-      default: ''
+      default: 'medium'
     },
     src: {
       type: String,
