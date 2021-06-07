@@ -1,0 +1,29 @@
+.fruit-list {
+  padding: calculateRem(48px) 0;
+
+  &__heading {
+    @include font-size(36px);
+    font-weight: 100;
+    color: $secondaryLighten1;
+    margin-bottom: 1rem;
+  }
+
+  &__subheading {
+    @include font-size(18px);
+    color: $secondaryBase;
+    margin-bottom: calculateRem(48px);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+
+    > .col {
+      flex-grow: 0;
+    }
+  }
+}
+
+.row+.row {
+  margin-top: 0;
+}

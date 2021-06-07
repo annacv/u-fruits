@@ -1,0 +1,33 @@
+.fruit-app {
+  .v-sheet {
+    &.elevation-1 {
+      @include boxShadow(
+        0 calculateRem(2px) calculateRem(5px) 0 rgb(206, 204, 204), 
+        0 calculateRem(1px) calculateRem(1px) 0 rgb(208, 211, 211), 
+        0 calculateRem(1px) calculateRem(3px) 0 rgb(224, 221, 221)
+      );
+    }
+  }
+
+  .header-brand {
+    display: flex;
+    align-self: center;
+
+    &__heading {
+      padding: 0 0.25rem;
+    }
+  
+    &__actions {
+      display: flex;
+      align-self: center;
+      justify-content: flex-end;
+
+      .v-btn {
+        &.v-btn--text {
+          font-size: calculateRem(12px);
+          padding: 0 calculateRem(4px);
+        }
+      }
+    }
+  }
+}

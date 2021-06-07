@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="200px" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>image-placeholder</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="200" height="200" rx="2"></rect>
+    </defs>
+    <g id="image-placeholder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Rectangle" fill="#E8E8E8" xlink:href="#path-1"></use>
+            <g id="Group" mask="url(#mask-2)">
+                <g transform="translate(36.000000, 36.000000)" id="icon-/-filled-/-image">
+                    <path d="M79.7507381,50.6265119 C82.0835114,48.0078846 86.2922018,47.7960464 88.8699927,50.2615375 L88.8699927,50.2615375 L121.743208,80.9857432 L121.753417,106.623278 L81.3127263,106.587546 L81.3918467,106.666667 L7.4424253,106.567128 L7.40158901,93.3821102 L33.3505007,67.5352893 C35.9104258,65.125948 39.9506665,65.0085437 42.4876212,67.6067528 L42.4876212,67.6067528 L53.7354675,78.8979877 Z M20.3318906,21.3333333 C27.6160643,21.3486767 33.511804,27.2699391 33.4965202,34.5643219 C33.4837291,41.8561524 27.5624667,47.7569966 20.278293,47.7417128 C12.991567,47.7263694 7.09582727,41.805107 7.11111111,34.5107242 C7.12645449,27.2188937 13.0451646,21.3180495 20.3318906,21.3333333 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

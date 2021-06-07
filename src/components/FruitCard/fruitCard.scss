@@ -1,0 +1,62 @@
+.fruit-app {
+  .v-card {
+    &.v-sheet--outlined {
+      border: thin solid $secondaryLighten2;
+    }
+  
+    &__title {
+      padding: 1rem 1rem 0.5rem;
+      color: $secondaryBase;
+    }
+
+    &__text {
+      @include font-size(12px);
+      padding: 0 0.5rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: flex-end;
+      a {
+        color: $primaryDarken1;
+      }
+    }
+
+    &__image {
+      &--small {
+        border-right: calculateRem(1px) solid $secondaryLighten2;
+      }
+    }
+  
+    &--small {
+      &.elevation-1 {
+        @include boxShadow(
+          0 calculateRem(2px) calculateRem(5px) 0 rgba(232,232,232,1), 
+          0 calculateRem(1px) calculateRem(1px) 0 rgba(239,241,241,1), 
+          0 calculateRem(1px) calculateRem(3px) 0 rgba(248,248,248,1)
+        );
+      }
+
+      .v-card__title {
+        @include font-size(18px);
+        letter-spacing: calculateRem(-0.45px);
+      }
+    }
+
+    &--large {
+      padding: 1rem 0;
+
+      .v-card__title {
+        @include font-size(36px);
+        font-weight: 200;
+        padding: 1rem;
+      }
+
+      .v-card__subtitle {
+        @include font-size(18px);
+        padding: calculateRem(24px) 1rem;
+        font-weight: 400;
+        line-height: 1.2;
+        text-align: left;
+      }
+    }
+  }
+}
