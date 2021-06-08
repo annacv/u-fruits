@@ -21,6 +21,16 @@ npm run serve
 npm run test:unit
 ```
 
+## Runs e2e tests with GUI
+```
+npm run test:e2e
+```
+
+## Runs e2e tests in headless mode
+```
+npm run test:e2e -- --headless
+```
+
 ### Compiles and minifies for production
 ```
 npm run build

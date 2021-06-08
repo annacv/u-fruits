@@ -15,7 +15,6 @@
           :disabled="disabled"
           :icon="iconName && !label ? true : false"
           :outlined="hover ? false : outlined"
-          rounded
           :text="iconName && label ? true : false"
           :to="to"
           :type="type"
@@ -24,6 +23,8 @@
           :medium="size === 'medium'"
           :large="size === 'large'"
           :x-large="size === 'x-large'"
+          data-test="btn"
+          rounded
           v-on="on"
           @click="onClick()"
         >
@@ -50,7 +51,6 @@
       :aria-label="iconName ? ariaLabel : null"
       :disabled="disabled"
       :outlined="hover ? false : outlined"
-      rounded
       :text="iconName && label ? true : false"
       :to="to"
       :type="type"
@@ -59,6 +59,8 @@
       :medium="size === 'medium'"
       :large="size === 'large'"
       :x-large="size === 'x-large'"
+      data-test="btn"
+      rounded
       @click="onClick()"
     >
       <slot name="default">
