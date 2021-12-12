@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import { mapState, mapGetters } from 'vuex'
+import { mapGetters } from 'vuex'
 import TheHeader from '@/components/TheHeader/TheHeader'
 import TheFooter from '@/components/TheFooter/TheFooter'
 
@@ -35,14 +35,11 @@ export default {
   }),
 
   computed: {
-		...mapGetters(['allFruits', 'fruit']),
-    ...mapState({
-			fruits: (state) => state.fruits
-		})
+		...mapGetters(['allFruits', 'fruit'])
 	},
 
   mounted() {
-    const allFruits = this.fruits
+    const allFruits = this.allFruits
     allFruits.forEach((fruit) => {
       if (fruit.name === this.$route.params.id) {
         this.$store.dispatch('getCurrentFruit', fruit)
